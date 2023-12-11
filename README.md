@@ -1,5 +1,9 @@
 # IntelliClinic
 
+<p align="center">
+  <img src="https://i.imgur.com/R7QkiUK.png" alt="IntelliClinic Banner">
+</p>
+
 IntelliClinic is an AI-Powered Healthcare Platform (AHP) is a cutting-edge solution designed to revolutionize the healthcare industry by integrating artificial intelligence into patient care workflows. AHP streamlines patient intake, automates the creation of focused HPIs, and provides support for differential diagnosis, significantly enhancing the efficiency of medical documentation and patient management. With its advanced NLP capabilities, the platform translates complex medical notes into actionable data, thereby improving the quality of care and facilitating better health outcomes. Emphasizing security and compliance, AHP ensures the protection and confidentiality of sensitive health information throughout the patient care process.
 
 # Technical Software Specification Document
