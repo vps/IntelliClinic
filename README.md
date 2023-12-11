@@ -72,6 +72,82 @@ The AHP will be a comprehensive solution capable of optimizing patient intake, g
 
 The document details the product functions, user interfaces, system features, and security requirements.
 
+```
+AI-Healthcare-Platform-MVP/
+│
+├── app/                        # Application code
+│   ├── __init__.py             # Initializes the Python app as a module
+│   ├── views.py                # Handles the routing and views for the web application
+│   ├── models.py               # Defines data models for the application
+│   ├── forms.py                # Defines web-forms to interact with user input
+│   ├── utils/                  # Utility scripts and helper functions
+│   │   ├── __init__.py
+│   │   ├── ai_helpers.py       # Helper functions for AI operations
+│   │   └── db_helpers.py       # Helper functions for database interactions
+│   └── templates/              # HTML templates for the web interface
+│       ├── layout.html         # Base layout for the web pages
+│       ├── index.html          # Main page template
+│       └── report.html         # Template for displaying the patient report
+│
+├── ai/                         # AI model code
+│   ├── __init__.py
+│   ├── intake_model.py         # AI model for patient intake
+│   └── note_generation_model.py# AI model for generating patient notes
+│
+├── static/                     # Static files for the web interface
+│   ├── css/                    # CSS stylesheets
+│   │   └── main.css            # Main stylesheet for the application
+│   ├── js/                     # JavaScript files
+│   │   └── main.js             # Main JavaScript file for dynamic behaviors
+│   └── img/                    # Image files
+│       └── logo.png            # Logo image
+│
+├── tests/                      # Automated tests
+│   ├── __init__.py
+│   ├── test_views.py           # Tests for view functions
+│   └── test_models.py          # Tests for data models
+│
+├── config/                     # Configuration files
+│   ├── __init__.py
+│   └── settings.py             # Contains settings for the Django project
+│
+├── scripts/                    # Deployment and utility scripts
+│   ├── init_db.py              # Script to initialize the database
+│   └── start_server.sh         # Script to start the web server
+│
+├── .gitignore                  # Specifies intentionally untracked files to ignore
+├── requirements.txt            # Lists all Python dependencies for the project
+├── manage.py                   # Command-line utility for administrative tasks
+├── Dockerfile                  # Instructions for Docker to build the application
+├── docker-compose.yml          # Defines and runs multi-container Docker applications
+└── README.md                   # Project overview and instructions
+
+```
+
+This structure is designed to be clear and modular, facilitating easy navigation and understanding of the project's organization for developers, stakeholders, and investors.
+
+- **app/**: This directory contains the core application logic, including view functions, data models, and form definitions. The `templates/` sub-directory contains HTML templates to render the web pages.
+  
+- **ai/**: This directory is dedicated to the AI aspects of the project, including the machine learning models that handle patient intake and note generation.
+
+- **static/**: Contains all the static assets used by the web application like CSS, JavaScript, and images. These files contribute to the frontend part of the application.
+
+- **tests/**: Includes tests for different parts of the application ensuring code reliability and ease of maintenance.
+
+- **config/**: Holds configuration files for the application, such as Django settings.
+
+- **scripts/**: Contains utility scripts that help in setting up the database or starting the server, which are especially useful for deployment.
+
+- **.gitignore**: A Git configuration file that tells Git which files or directories to ignore in a project.
+
+- **requirements.txt**: A plaintext file listing all the dependencies which can be installed using `pip install -r requirements.txt`.
+
+- **manage.py**: A command-line utility that lets you interact with this Django project in various ways.
+
+- **Dockerfile** and **docker-compose.yml**: Used for containerizing the application and defining multi-container Docker applications, respectively.
+
+- **README.md**: The markdown file providing a description of the project, how to set it up, and how to use it.
+
 ## 2. Overall Description
 
 ### 2.1 Product Perspective
