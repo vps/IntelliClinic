@@ -124,28 +124,16 @@ AI-Healthcare-Platform-MVP/
 
 ```
 
-This structure is designed to be clear and modular, facilitating easy navigation and understanding of the project's organization for developers, stakeholders, and investors.
-
 - **app/**: This directory contains the core application logic, including view functions, data models, and form definitions. The `templates/` sub-directory contains HTML templates to render the web pages.
-  
 - **ai/**: This directory is dedicated to the AI aspects of the project, including the machine learning models that handle patient intake and note generation.
-
 - **static/**: Contains all the static assets used by the web application like CSS, JavaScript, and images. These files contribute to the frontend part of the application.
-
 - **tests/**: Includes tests for different parts of the application ensuring code reliability and ease of maintenance.
-
 - **config/**: Holds configuration files for the application, such as Django settings.
-
 - **scripts/**: Contains utility scripts that help in setting up the database or starting the server, which are especially useful for deployment.
-
 - **.gitignore**: A Git configuration file that tells Git which files or directories to ignore in a project.
-
 - **requirements.txt**: A plaintext file listing all the dependencies which can be installed using `pip install -r requirements.txt`.
-
 - **manage.py**: A command-line utility that lets you interact with this Django project in various ways.
-
 - **Dockerfile** and **docker-compose.yml**: Used for containerizing the application and defining multi-container Docker applications, respectively.
-
 - **README.md**: The markdown file providing a description of the project, how to set it up, and how to use it.
 
 ## 2. Overall Description
