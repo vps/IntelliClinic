@@ -1,0 +1,48 @@
+<!-- app/templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntelliClinic - AI-Powered Healthcare Platform</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="IntelliClinic Logo">
+        <h1>IntelliClinic - AI-Powered Healthcare Platform</h1>
+    </header>
+
+    <main>
+        <h2>Patient Intake Form</h2>
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            <div>
+                {{ form.first_name.label }} {{ form.first_name() }}
+            </div>
+            <div>
+                {{ form.last_name.label }} {{ form.last_name() }}
+            </div>
+            <div>
+                {{ form.dob.label }} {{ form.dob() }}
+            </div>
+            <div>
+                {{ form.gender.label }} {{ form.gender() }}
+            </div>
+            <div>
+                {{ form.symptoms.label }} {{ form.symptoms() }}
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2022 IntelliClinic. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

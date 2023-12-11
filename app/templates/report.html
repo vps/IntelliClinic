@@ -1,0 +1,22 @@
+<!-- app/templates/report.html -->
+
+{% extends "layout.html" %}
+
+{% block content %}
+    <section class="report">
+        <h2>Patient Report</h2>
+        <div class="patient-info">
+            <h3>Patient Information</h3>
+            <p><strong>Name:</strong> {{ patient.first_name }} {{ patient.last_name }}</p>
+            <p><strong>Date of Birth:</strong> {{ patient.dob.strftime('%Y-%m-%d') }}</p>
+            <p><strong>Gender:</strong> {{ patient.gender }}</p>
+            <p><strong>Symptoms:</strong> {{ patient.symptoms }}</p>
+        </div>
+        <div class="patient-note">
+            <h3>Generated Note</h3>
+            <p>{{ note }}</p>
+        </div>
+        <a href="{{ url_for('app_views.index') }}">Back to Home</a>
+    </section>
+{% endblock %}
+</strong>
